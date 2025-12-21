@@ -9,7 +9,7 @@ app = FastAPI(title="Gov&Me Tax Portal")
 # FIX: Add CORS Middleware so the browser doesn't block the request
 app.add_middleware(
     CORSMiddleware,
-    allow_origins=["http://localhost:3000"], # Next.js default port
+    allow_origins=["https://gov-me.vercel.app/"], # Next.js default port
     allow_methods=["*"],
     allow_headers=["*"],
 )
@@ -26,4 +26,4 @@ def get_tax(taxable_income: float, category: str, high_turnover: bool = False ):
 
 if __name__ == "__main__":
     import uvicorn
-    uvicorn.run(app, host="0.0.0.0", port=8000)
+    uvicorn.run(app, host="0.0.0.0", port=8000) 
