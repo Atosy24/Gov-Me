@@ -1,0 +1,24 @@
+# --- Python / FastAPI ---
+__pycache__/
+*.py[cod]
+*$py.class
+.venv/
+site1/              # Your specific virtual environment
+.env
+.pytest_cache/
+
+# --- Node / Next.js ---
+node_modules/       # Massive folder, never push this
+.next/
+out/
+build/
+.vercel/
+
+# --- OS Specific ---
+.DS_Store
+Thumbs.db
+
+# --- IDE Settings ---
+.vscode/
+.idea/
+*.swp
